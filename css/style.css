@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700 &family=Cormorant:wght@500;600&family=Permanent+Marker&display=swap");
+header {
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    z-index: 6;
+}
+.secciones {
+    background-color: #f2eee3;
+    display: flex;
+    text-decoration: none;
+}
+.barra {
+    color: #5e492d;
+    font-family: "Permanent Marker", cursive;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    white-space: nowrap;
+    margin: 2vw;
+}
+.ulNavbar {
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    list-style-type: none;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    z-index: 6;
+}
+/* Titulo del home */
+.titulo-principal {
+    font-family: "Permanent Marker", cursive;
+    color: #534027;
+    text-align: center;
+    font-size: 6vw;
+    font-weight: bold;
+    background-color: white;
+    margin: 4vw;
+}
+.logo {
+    text-align: left;
+    display: flex;
+    margin-left: 1vw;
+    align-items: center;
+    justify-content: center;
+}
+.busqueda {
+    text-align: start;
+    display: flex;
+    margin: 0 1%;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor {
+    display: flex;
+    align-items: center;
+    background-color: #f2eee3;
+}
+/* Imagen inicio, debajo del header */
+.portada {
+    height: 115vh;
+    width: auto;
+    background-image: url('../imagenes/Portada.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.boton-principal {
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+.contenedor-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: auto;
+    width: auto;
+    background-image: url('../imagenes/pie-pagina.jpg');
+    opacity: 0.7;
+    text-align: center;
+    text-decoration: none;
+    background-position: left;
+}
+.adopta-portada {
+    height: 100vh;
+    width: auto;
+    background-image: url('../imagenes/adopta.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.subtitulo {
+    color: #534027;
+    font-weight: bold;
+    font-family: "Permanent Marker", cursive;
+    text-align: center;
+    list-style-type: none;
+    margin: 6vh;
+    font-size: 180%;
+    background-color: #c9ae8b;
+    border-radius: 10%;
+}
+.grid-index {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    column-gap: 1vw;
+}
+
+/*ESTILO DE LA GRILLA ADOPTAR*/
+.grid-adoptar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 2vh 2vw;
+}
+.img_adoptar {
+    width: 95%;
+    margin: 2vh;
+}
+.p_adoptar {
+    font-family: "Permanent Marker", cursive;
+    font-size: 120%;
+    text-align: center;
+    color: #534027;
+}
+.grid-adoptados {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+}
+.img_adoptados {
+    width: 50vh;
+    height: 40vh;
+    text-align: center;
+    border-radius: 10%;
+}
+.p_adoptados {
+    font-family: "Permanent Marker", cursive;
+    font-weight: bold;
+    font-size: 120%;
+    text-align: center;
+    height: 15vh;
+    width: auto;
+    color: #534027;
+}
+.img_index {
+    width: 80%;
+    margin: 3vh 3.5vh;
+}
+.img_box {
+    transition: all 2s;
+}
+.img_box:hover {
+    transform: scale(2);
+}
+.p_index {
+    font-family: "Permanent Marker", cursive;
+    font-size: 150%;
+    text-align: center;
+    color: #534027;
+}
+.btn-index {
+    align-items: center;
+    display: block;
+    margin: 3vh auto;
+    background-color: #caaf8d;
+    font-size: 150%;
+    font-family: "Permanent Marker", cursive;
+    border-radius: 9%;
+}
+.btn-index:hover {
+    transform: scale(1.5);
+}
+.ul_footer {
+    list-style-type: none;
+    margin: 8%;
+    background-color: white;
+}
+.p_footer {
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 150%;
+    text-align: center;
+    justify-content: center;
+    color: #1f160a;
+    font-weight: bold;
+    background-color: white;
+    margin: 8%;
+}
+.titulo_footer {
+    font-size: 200%;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #20180c;
+}
+.grid-maltrato {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100%;
+    align-items: center;
+    align-content: center;
+}
+.img-maltrato {
+    height: auto;
+    margin-left: 7vw;
+}
+.contenedor-videos {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+}
+.videos-maltrato {
+    width: 40vw;
+    height: 25vw;
+    margin: 3vh 5vw;
+}
+.p-maltrato {
+    font-size: 25px;
+    text-align: justify;
+    margin-left: 4vw;
+}
+.texto_requisitos {
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    font-size: 30px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    font-family: "Permanent Marker", cursive;
+    color: #534027;
+}
+.animacion-texto {
+    animation: textoo 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes textoo {
+    from {
+        width: 0;
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+        width: 25em;
+        border-right-color: transparent;
+    }
+}
+.grid_requisitos {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    align-items: center;
+    align-content: center;
+    margin: 8vh 6vh;
+}
+.contenedor-video-requisitos {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    margin: 7%;
+}
+.p_requisitos {
+    margin: 8vh 6vh;
+}
+.grid_nosotros {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    align-items: center;
+    align-content: center;
+    margin: 7vh 9vh;
+}
+.contener_imagen_nosotros {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+}
