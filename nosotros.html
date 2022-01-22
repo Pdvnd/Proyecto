@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../entrega-4/css/style.css">
     <link rel="shortcut icon" href="./imagenes/Favicon.png">
     <title>Nosotros</title>
@@ -26,21 +28,12 @@
                 </div>
                 <div class="secciones">
                     <ul class="ulNavbar">
-                        <li>
-                            <a href="index.html" class="barra">Home</a>
+                        <li class="listaDelMenu"><a href="index.html" class="barra">Home</a></li>
+                        <li class="listaDelMenu"><a href="nosotros.html" class="barra">Nosotros</a></li>
+                        <li class="listaDelMenu"><a href="adoptar.html" class="barra">Adoptar</a></li>
+                        <li class="listaDelMenu"><a href="requisitos.html" class="barra">Requisitos para adoptar</a>
                         </li>
-                        <li>
-                            <a href="nosotros.html" class="barra">Nosotros</a>
-                        </li>
-                        <li>
-                            <a href="adoptar.html" class="barra">Adoptar</a>
-                        </li>
-                        <li>
-                            <a href="requisitos.html" class="barra">Requisitos para adoptar</a>
-                        </li>
-                        <li>
-                            <a href="adoptados.html" class="barra">Adoptados</a>
-                        </li>
+                        <li class="listaDelMenu"><a href="adoptados.html" class="barra">Adoptados</a></li>
                     </ul>
                 </div>
             </div>
@@ -62,9 +55,37 @@
                         perferendis cupiditate commodi vitae nisi.</p>
                 </div>
             </div>
-            <div class="contenedor_imagen_nosotros">
-                <img src="./imagenes/Equipo.jpg" alt="Foto equipo Nala's Safe">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./imagenes/Equipo.jpg" class="d-block h-80"
+                            alt="Equipo Nala's Safe">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./imagenes/Equipo2.jpg" class="d-block h-80"
+                            alt="Equipo Nala's Safe2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./imagenes/Equipo3.jpg" class="d-block h-80"
+                            alt="Equipo Nala's Safe3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./imagenes/Equipo4.jpg" class="d-block h-80"
+                            alt="Equipo Nala's Safe4">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
+        </div>
         </div>
         <div>
             <h2 class="subtitulo">Nuestros objetivos</h2>
@@ -116,21 +137,11 @@
                 </div>
                 <div>
                     <ul class="ul_footer">
-                        <li>
-                            <a class="p_footer" href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a class="p_footer" href="nosotros.html">Nosotros</a>
-                        </li>
-                        <li>
-                            <a class="p_footer" href="adoptar.html">Adoptar</a>
-                        </li>
-                        <li>
-                            <a class="p_footer" href="requisitos.html">Requisitos para adoptar</a>
-                        </li>
-                        <li>
-                            <a class="p_footer" href="adoptados.html">Adoptados</a>
-                        </li>
+                        <li><a class="p_footer" href="index.html">Home</a></li>
+                        <li><a class="p_footer" href="nosotros.html">Nosotros</a></li>
+                        <li><a class="p_footer" href="adoptar.html">Adoptar</a></li>
+                        <li><a class="p_footer" href="requisitos.html">Requisitos para adoptar</a></li>
+                        <li><a class="p_footer" href="adoptados.html">Adoptados</a></li>
                     </ul>
                 </div>
             </div>
@@ -147,9 +158,9 @@
             </div>
         </div>
     </footer>
-</body>
-
-</html>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
