@@ -14,10 +14,12 @@
 
 <body>
     <header>
-        <nav>
-            <div class="contenedor">
-                <div class="logo">
-                    <a href="index.html"><img src="./imagenes/Logo-Nala's-Safe.jpg" alt="Logo Nala's Safe">
+        <nav class="navbar navbar-expand-lg navbar-light contenedor">
+            <div class="container-fluid logo contenedor">
+                <div>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./imagenes/Logo-Nala's-Safe.jpg" alt="Logo Nala's Safe">
+                    </a>
                 </div>
                 <div class="busqueda">
                     <form action="https://www.google.com/search?q=" method="get">
@@ -26,15 +28,14 @@
                         <input type="submit" value="" />
                     </form>
                 </div>
-                <div class="secciones">
-                    <ul class="ulNavbar">
-                        <li class="listaDelMenu"><a href="index.html" class="barra">Home</a></li>
-                        <li class="listaDelMenu"><a href="nosotros.html" class="barra">Nosotros</a></li>
-                        <li class="listaDelMenu"><a href="adoptar.html" class="barra">Adoptar</a></li>
-                        <li class="listaDelMenu"><a href="requisitos.html" class="barra">Requisitos para adoptar</a>
-                        </li>
-                        <li class="listaDelMenu"><a href="adoptados.html" class="barra">Adoptados</a></li>
-                    </ul>
+                <div class="collapse navbar-collapse secciones" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ulNavbar contenedor">
+                        <a href="index.html" class="barra" aria-current="page">Home</a>
+                        <a href="nosotros.html" class="barra">Nosotros</a>
+                        <a href="adoptar.html" class="barra">Adoptar</a>
+                        <a href="requisitos.html" class="barra">Requisitos para adoptar</a>
+                        <a href="adoptados.html" class="barra">Adoptados</a>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -58,20 +59,16 @@
             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./imagenes/Equipo.jpg" class="d-block h-80"
-                            alt="Equipo Nala's Safe">
+                        <img src="./imagenes/Equipo.jpg" class="d-block h-80" alt="Equipo Nala's Safe">
                     </div>
                     <div class="carousel-item">
-                        <img src="./imagenes/Equipo2.jpg" class="d-block h-80"
-                            alt="Equipo Nala's Safe2">
+                        <img src="./imagenes/Equipo2.jpg" class="d-block h-80" alt="Equipo Nala's Safe2">
                     </div>
                     <div class="carousel-item">
-                        <img src="./imagenes/Equipo3.jpg" class="d-block h-80"
-                            alt="Equipo Nala's Safe3">
+                        <img src="./imagenes/Equipo3.jpg" class="d-block h-80" alt="Equipo Nala's Safe3">
                     </div>
                     <div class="carousel-item">
-                        <img src="./imagenes/Equipo4.jpg" class="d-block h-80"
-                            alt="Equipo Nala's Safe4">
+                        <img src="./imagenes/Equipo4.jpg" class="d-block h-80" alt="Equipo Nala's Safe4">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
