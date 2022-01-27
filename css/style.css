@@ -3,22 +3,26 @@
     padding: 0;
 }
 @import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700 &family=Cormorant:wght@500;600&family=Permanent+Marker&display=swap");
-header {
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300&display=swap');
+.sticky {
     position: sticky;
     top: 0;
     bottom: 0;
 }
-.secciones {
+.secciones,
+.navbar-collapse {
     background-color: #f2eee3;
     display: flex;
     text-decoration: none;
     background-image: cover;
     text-align: center;
     align-items: center;
+    z-index: 20;
 }
-.barra {
+.barra,
+.nav-link {
     color: #443219;
-    font-family: "Permanent Marker", cursive;
+    font-family: 'Josefin Slab', serif;
     font-weight: bold;
     font-size: 18px;
     text-decoration: none;
@@ -27,8 +31,10 @@ header {
     margin: 1.8vw;
     text-align: center;
     align-items: center;
+    z-index: 20;
 }
-.ulNavbar {
+.ulNavbar,
+.navbar-nav {
     display: flex;
     justify-content: space-around;
     text-transform: uppercase;
@@ -37,11 +43,11 @@ header {
     position: sticky;
     top: 0;
     bottom: 0;
-    z-index: 6;
+    z-index: 20;
 }
 /* Titulo del home */
 .titulo-principal {
-    font-family: "Permanent Marker", cursive;
+    font-family: 'Josefin Slab', serif;
     color: #534027;
     text-align: center;
     background-color: white;
@@ -49,14 +55,15 @@ header {
     font-size: 80px;
     font-weight: bold;
     color: #534027;
-    text-shadow: 0 1px 0 , 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+    text-shadow: 0 1px 0, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
 }
-.logo {
+.logo,
+.navbar-expand-sm {
     text-align: left;
     display: flex;
     margin-left: auto;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
 }
 .busqueda {
     text-align: start;
@@ -65,10 +72,12 @@ header {
     align-items: center;
     justify-content: center;
 }
-.contenedor {
+.contenedor,
+.navbar-expand-sm {
     align-items: center;
     background-color: #f2eee3;
     background-image: cover;
+    justify-content: space-between;
 }
 /* Imagen inicio, debajo del header */
 .portada {
@@ -106,7 +115,7 @@ header {
 .subtitulo {
     color: #534027;
     font-weight: bold;
-    font-family: "Permanent Marker", cursive;
+    font-family: 'Josefin Slab', serif;
     text-align: center;
     list-style-type: none;
     margin: 6vh;
@@ -132,7 +141,7 @@ header {
     margin: 2vh;
 }
 .p_adoptar {
-    font-family: "Permanent Marker", cursive;
+    font-family: 'Josefin Slab', serif;
     font-size: 120%;
     text-align: center;
     color: #534027;
@@ -150,7 +159,7 @@ header {
     border-radius: 10%;
 }
 .p_adoptados {
-    font-family: "Permanent Marker", cursive;
+    font-family: 'Josefin Slab', serif;
     font-weight: bold;
     font-size: 120%;
     text-align: center;
@@ -159,7 +168,7 @@ header {
     color: #534027;
 }
 .p_index {
-    font-family: "Permanent Marker", cursive;
+    font-family: 'Josefin Slab', serif;
     font-size: 150%;
     text-align: center;
     color: #534027;
@@ -170,7 +179,7 @@ header {
     margin: 3vh auto;
     background-color: #caaf8d;
     font-size: 150%;
-    font-family: "Permanent Marker", cursive;
+    font-family: 'Josefin Slab', serif;
     border-radius: 9%;
 }
 .btn-index:hover {
@@ -184,7 +193,7 @@ header {
 .p_footer {
     text-decoration: none;
     list-style-type: none;
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'Josefin Slab', serif;
     font-size: 150%;
     text-align: center;
     justify-content: center;
@@ -232,7 +241,7 @@ header {
     white-space: nowrap;
     overflow: hidden;
     transform: translateY(-50%);
-    font-family: "Permanent Marker", cursive;
+    font-family: 'Josefin Slab', serif;
     color: #534027;
 }
 .animacion-texto {
@@ -251,20 +260,20 @@ header {
 }
 .grid_requisitos {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 43% 57%;
     grid-template-rows: 100%;
     align-items: center;
     align-content: center;
-    margin: 8vh 6vh;
+    margin: 2vh 2vw;
 }
 .contenedor-video-requisitos {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 100%;
-    margin: 7%;
+    margin: 2vh 2vw;
 }
 .p_requisitos {
-    margin: 8vh 6vh;
+    margin: 10vh 5vw;
 }
 .grid_nosotros {
     display: grid;
@@ -272,12 +281,300 @@ header {
     grid-template-rows: 100%;
     align-items: center;
     align-content: center;
-    margin: 7vh 9vh;
+    margin: 2vh 2vw;
 }
 .contener_imagen_nosotros {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 100%;
 }
+.img-nosotos{
+    width: 45vw;
+    height: auto;
+}
+.video_requisitos {
+    width: 50vw;
+    height: 30vh;
+}
+@media only screen and (max-width: 425px) {
+    .sticky{
+        top: 0;
+        bottom: 0;
+        position:static;
+    }
+    .secciones {
+        background-color: #f2eee3;
+        display: flex;
+        text-decoration: none;
+        background-image: cover;
+        text-align: center;
+        align-items: center;
+    }
+    .barra {
+        color: #5e492d;
+        font-weight: bold;
+        text-decoration: none;
+        display: flex;
+        white-space: nowrap;
+        margin: 0;
+    }
+    .ulNavbar {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+    }
 
+    .listaDelMenu {
+        color: white;
+        font-size: 12px;
+        font-family: 'Josefin Slab', serif;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: flex;
+        white-space: nowrap;
+        margin: 5px;
+    }
 
+    /* Titulo del home */
+    .titulo-principal {
+        font-family: 'Josefin Slab', serif;
+        color: #534027;
+        text-align: center;
+        font-size: 45px;
+        font-weight: bold;
+        background-color: white;
+        margin: 4vw;
+    }
+    .logo, .navbar-brand {
+        width: 20vh;
+    }
+    .busqueda {
+        display: none;
+    }
+    .contenedor {
+        display: flex;
+        align-items: center;
+        background-color: #f2eee3;
+        justify-content: space-between;
+    }
+    /* Imagen inicio, debajo del header */
+    .portada {
+        height: 30vh;
+        width: 100%;
+        background-image: url('../imagenes/Portada.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .boton-principal {
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        background-color: #f2eee3;
+    }
+    .contenedor-footer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        justify-items: center;
+        background-image: url('../imagenes/pie-pagina.jpg');
+        opacity: 0.8;
+        text-align: center;
+        background-position: left;
+    }
+    .adopta-portada {
+        height: 30vh;
+        width: 100%;
+        background-image: url('../imagenes/adopta.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .contenido-pagina-principal {
+        background-color: #f2eee3;
+        list-style-type: none;
+        font-family: 'Josefin Slab', serif;
+        background-position: center;
+        text-align: center;
+    }
+    .subtitulo {
+        color: #5e492d;
+        font-weight: bold;
+        font-family: 'Josefin Slab', serif;
+        text-align: center;
+        list-style-type: none;
+        margin: 8%;
+        font-size: 180%;
+        background-color: #c9ae8b;
+        border-radius: 10%;
+    }
+    .grid-index {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        justify-items: center;
+        z-index:var(0%);
+    }
+    .contenedor-img-index {
+        align-items: center;
+    }
+    /*ESTILO DE LA GRILLA ADOPTAR*/
+    .grid-adoptar {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .img_adoptar {
+        height: 15vh;
+        width: 25vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .p_adoptar {
+        font-family: 'Josefin Slab', serif;
+        font-weight: bold;
+        font-size: 120%;
+        text-align: center;
+    }
+    .grid-adoptados {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        text-align: center;
+    }
+    .img_adoptados {
+        height: 20vh;
+        width: 40vw;
+        text-align: center;
+    }
+    .p_adoptados {
+        font-family: 'Josefin Slab', serif;
+        font-weight: bold;
+        font-size: 120%;
+        text-align: center;
+        height: 15vh;
+        width: auto;
+    }
+    .img_index {
+        height: auto;
+        width: 90%;
+        margin: 2vh 5vw;
+    }
+    .p_index {
+        font-family: 'Josefin Slab', serif;
+        font-size: 15px;
+        text-align: center;
+    }
+    .btn-index {
+        align-items: center;
+        display: block;
+        margin: 0 auto;
+        font-size: 15px;
+    }
+    .ul_footer {
+        list-style-type: none;
+        width: 75%;
+        background-color: white;
+        opacity: 0,9;
+    }
+    .p_footer {
+        text-decoration: none;
+        list-style-type: none;
+        font-family: 'Josefin Slab', serif;
+        font-size: 15px;
+        text-align: center;
+        justify-content: center;
+        color: #3a2b17;
+        font-weight: bold;
+        opacity: 0,9;
+    }
+    .titulo_footer {
+        font-size: 20px;
+        text-align: center;
+        font-family: 'Josefin Slab', serif;
+        font-weight: bold;
+        color: #3a2b17;
+        background-color: white;
+        opacity: 0.9;
+    }
+    .grid-maltrato {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .img-maltrato{
+        width: 90vw;
+        height: auto;
+    }
+    .contenedor-videos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .videos-maltrato {
+        width: 90vw;
+        height: 50vh;
+    }
+    .p-maltrato {
+        font-size: 15px;
+        text-align: justify;
+        margin: 2vh;
+    }
+    .grid_nosotros{
+        display: flex;
+        flex-direction: column;
+        width: 68%;
+        height: 50%;
+    }
+    .img-nosotos{
+        width: 90vw;
+        height: auto;
+    }
+    .p_requisitos {
+        font-size: 15px;
+        text-align: justify;
+        margin: 3vh;
+    }
+    .grid_requisitos {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 50%;
+        text-align: justify;
+    }
+    .videos_requisitos {
+        width: 50vw 80vw;
+        align-content: center;
+    }
+    .texto_requisitos {
+        width: 24em;
+        margin: 0 auto;
+        border-right: 2px solid rgba(255, 255, 255, 0.75);
+        font-size: 18px;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        transform: translateY(-50%);
+        font-family: 'Josefin Slab', serif;
+        color: #534027;
+    }
+    .animacion-texto {
+        animation: textoo 10s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes textoo {
+        from {
+            width: 0;
+            border-right-color: rgba(255, 255, 255, 0.75);
+        }
+        to {
+            width: 25em;
+            border-right-color: transparent;
+        }
+    }
+}
