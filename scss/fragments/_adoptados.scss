@@ -1,0 +1,42 @@
+.grid-adoptados {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    div {
+        .img_adoptados {
+            width: 80vh;
+            height: 50vh;
+            text-align: center;
+        }
+    }
+}
+.p_adoptados {
+    font-family: 'Josefin Slab', serif;
+    font-size: 120%;
+    text-align: center;
+    color: #534027;
+    margin: 6vh;
+}
+@media only screen and(max-width: 425px) {
+.grid-adoptados {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    text-align: center; 
+    div {
+        .img_adoptados {
+            height: 35vh;
+            width: 95vw;
+            text-align: center;
+        }
+    }
+}
+.p_adoptados {
+    font-family: 'Josefin Slab', serif;
+    font-weight: bold;
+    font-size: 120%;
+    text-align: center;
+    width: auto;
+}
+}

@@ -1,0 +1,40 @@
+.grid-adoptar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 2vh 2vw;
+    div {
+        .img_adoptar {
+            width: 95%;
+            margin: 2vh;
+        }
+    }
+}
+.p_adoptar {
+    font-family: 'Josefin Slab', serif;
+    font-size: 120%;
+    text-align: center;
+    color: #534027;
+}
+
+@media only screen and(max-width: 425px) {
+    .grid-adoptar {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        div {
+        .img_adoptar {
+            height: 15vh;
+            width: 25vw;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+    .p_adoptar {
+        font-family: 'Josefin Slab', serif;
+        font-weight: bold;
+        font-size: 120%;
+        text-align: center;
+    }
+}
