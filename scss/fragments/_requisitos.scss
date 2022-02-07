@@ -26,7 +26,7 @@
     overflow: hidden;
     transform: translateY(-50%);
     font-family: $variable-font;
-    color: #534027;
+    color: map-get($map: $colores, $key:'parracolor' );
 }
 .animacion-texto {
     animation: textoo 10s;
@@ -70,8 +70,8 @@
     white-space: nowrap;
     overflow: hidden;
     transform: translateY(-50%);
-    font-family: 'Josefin Slab', serif;
-    color: #534027;
+    font-family: $variable-font;
+    color: map-get($map: $colores, $key: 'parracolor' );
 }
 .animacion-texto {
     animation: textoo 5s;

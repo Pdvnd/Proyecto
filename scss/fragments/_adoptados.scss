@@ -12,12 +12,13 @@
     }
 }
 .p_adoptados {
-    font-family: 'Josefin Slab', serif;
+    font-family: $variable-font;
     font-size: 120%;
     text-align: center;
-    color: #534027;
+    color: $parracolor;
     margin: 6vh;
 }
+
 @media only screen and(max-width: 425px) {
 .grid-adoptados {
     display: grid;
@@ -33,7 +34,7 @@
     }
 }
 .p_adoptados {
-    font-family: 'Josefin Slab', serif;
+    font-family: $variable-font;
     font-weight: bold;
     font-size: 120%;
     text-align: center;

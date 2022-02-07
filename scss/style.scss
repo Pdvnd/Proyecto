@@ -1,4 +1,3 @@
-$variable-font: 'Josefin Slab', serif;
 @import "./fragments/general";
 @import "./fragments/home";
 @import "./fragments/footer";
@@ -8,3 +7,13 @@ $variable-font: 'Josefin Slab', serif;
 @import "./fragments/adoptar";
 @import "./fragments/adoptados";
 @import "./fragments/requisitos";
+$variable-font: 'Josefin Slab', serif;
+$colores: (
+    'parracolor': #534027,
+    'titucolor': #f2eee3,
+    'btncolor': #caaf8d,
+    'parrabtn': black,
+    'parrafooter': #1f160a,
+    'titufooter':#20180c 
+)
+
