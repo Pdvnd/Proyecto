@@ -12,20 +12,16 @@
         }
     }
 }
-
-
 .grid-maltrato {
     display: grid;
-    grid-template-columns: 54% 46%;
+    grid-template-columns: 48% 52%;
     grid-template-rows: 100%;
     align-items: center;
     align-content: center;
     div {
-        .p-maltrato {
-            font-size: 25px;
+        .p_maltrato {
             text-align: justify;
-            margin-left: 4vw;
-            margin-right: 4vw;
+            font-family: $variable-font;
         }
     }
 }
@@ -94,5 +90,5 @@
             }
         }
     }
-    
+
 }

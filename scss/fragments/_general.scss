@@ -4,11 +4,12 @@
 }
 @import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700 &family=Cormorant:wght@500;600&family=Permanent+Marker&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300&display=swap");
+
 @mixin btnindex {
     align-items: center;
     display: block;
     margin: 3vh auto;
-    background-color: map-get($map: $colores, $key:'btncolor' );
+    background-color: map-get($map: $colores, $key:'btn');
     font-size: 150%;
     font-family: $variable-font;
     color: map-get($map: $colores, $key: 'parrabtn' );
