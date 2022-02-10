@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700 &family=Cormorant:wght@500;600&family=Permanent+Marker&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700 &family=Cormorant:wght@500;600&family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -21,11 +23,10 @@
   margin: 3vh auto;
   background-color: #caaf8d;
   font-size: 150%;
-  font-family: "Josefin Slab", serif;
+  font-family: "Josefin Slab" serif;
   color: black;
   -webkit-text-decoration: 0;
           text-decoration: 0;
-  font-weight: bold;
 }
 
 .btn-index:hover {
@@ -52,10 +53,9 @@
 
 .barra,
 .nav-link {
-  color: #443219;
-  font-family: "Josefin Slab", serif;
-  font-weight: bold;
-  font-size: 18px;
+  color: #f2eee3;
+  font-family: "Josefin Slab" serif;
+  font-size: 20px;
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -67,6 +67,7 @@
       -ms-flex-align: center;
           align-items: center;
   z-index: 20;
+  font-weight: 400;
 }
 
 .ulNavbar,
@@ -148,10 +149,11 @@
       grid-template-rows: 100%;
   -webkit-column-gap: 1vw;
           column-gap: 1vw;
+  margin: 2%;
 }
 
 .grid-index div .p_index {
-  font-family: "Josefin Slab", serif;
+  font-family: "Josefin Slab" serif;
   font-size: 150%;
   text-align: center;
   color: #534027;
@@ -160,8 +162,8 @@
 .grid-maltrato {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 54% 46%;
-      grid-template-columns: 54% 46%;
+  -ms-grid-columns: 52% 48%;
+      grid-template-columns: 52% 48%;
   -ms-grid-rows: 100%;
       grid-template-rows: 100%;
   -webkit-box-align: center;
@@ -171,11 +173,14 @@
       align-content: center;
 }
 
-.grid-maltrato div .p-maltrato {
-  font-size: 25px;
+.grid-maltrato div .p_maltrato {
+  margin: 10vh 5vw;
   text-align: justify;
-  margin-left: 4vw;
-  margin-right: 4vw;
+}
+
+.grid-maltrato div .img-maltrato {
+  width: 47vw;
+  height: auto;
 }
 
 .contenedor-videos {
@@ -208,13 +213,13 @@
     justify-items: center;
     z-index: var(0%);
   }
-  .img_index {
+  .grid-index div .img_index {
     height: auto;
     width: 90%;
     margin: 2vh 5vw;
   }
   .p_index {
-    font-family: "Josefin Slab", serif;
+    font-family: "Josefin Slab" serif;
     font-size: 15px;
     text-align: center;
     font-weight: bold;
@@ -230,7 +235,12 @@
     width: 100%;
     height: auto;
   }
-  .img-maltrato {
+  .grid-maltrato div .p-maltrato {
+    font-size: 15px;
+    text-align: justify;
+    margin: 2vh;
+  }
+  .grid-maltrato div .img-maltrato {
     width: 90vw;
     height: auto;
   }
@@ -246,14 +256,9 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .videos-maltrato {
+  .contenedor-videos div .videos-maltrato {
     width: 90vw;
     height: 50vh;
-  }
-  .p-maltrato {
-    font-size: 15px;
-    text-align: justify;
-    margin: 2vh;
   }
 }
 
@@ -277,27 +282,26 @@
 .contenedor-footer div .titulo_footer {
   font-size: 200%;
   text-align: center;
-  font-family: "Josefin Slab", serif;
-  font-weight: bold;
+  font-family: "Josefin Slab" serif;
+  font-weight: 550;
   color: #20180c;
   text-decoration: none;
-  margin: 10%;
+  margin: 8%;
   background-color: white;
 }
 
-.p_footer {
-  font-family: "Josefin Slab", serif;
+.contenedor-footer div .p_footer {
+  font-family: "Josefin Slab" serif;
   font-size: 135%;
   text-align: center;
   color: #1f160a;
-  font-weight: bold;
   background-color: white;
-  margin: 3%;
   text-decoration: none;
   list-style-type: none;
+  font-weight: 400;
 }
 
-.ul_footer {
+.contenedor-footer div .ul_footer {
   text-decoration: none;
   list-style-type: none;
 }
@@ -323,65 +327,59 @@
   .contenedor-footer div .titulo_footer {
     font-size: 40px;
     text-align: center;
-    font-family: 'Josefin Slab', serif;
+    font-family: "Josefin Slab" serif;
     font-weight: bold;
-    color: #3a2b17;
+    color: #20180c;
     background-color: white;
-    opacity: 0.9;
+    opacity: 0.95;
   }
-  .p_footer {
+  .contenedor-footer div .p_footer {
     text-decoration: none;
     list-style-type: none;
-    font-family: 'Josefin Slab', serif;
+    font-family: "Josefin Slab" serif;
     font-size: 25px;
     text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    color: #3a2b17;
+    color: #1f160a;
     font-weight: bold;
     background-color: white;
   }
 }
 
 .titulo-principal {
-  font-family: "Josefin Slab", serif;
-  color: #534027;
+  font-family: "Josefin Slab" serif;
   text-align: center;
-  background-color: white;
   margin: 4vw;
   font-size: 80px;
-  font-weight: bold;
+  font-weight: 400;
   color: #534027;
   text-shadow: 0 1px 0, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
 }
 
 .subtitulo {
   color: #534027;
-  font-weight: bold;
-  font-family: "Josefin Slab", serif;
+  font-family: "Josefin Slab" serif;
   text-align: center;
   list-style-type: none;
   margin: 7vh;
   font-size: 200%;
-  font-weight: bold;
 }
 
 @media only screen and (max-width: 425px) {
   .titulo-principal {
-    font-family: "Josefin Slab", serif;
+    font-family: "Josefin Slab" serif;
     color: #534027;
     text-align: center;
     font-size: 45px;
     font-weight: bold;
-    background-color: white;
     margin: 4vw;
     text-shadow: 0 1px 0, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
   }
   .subtitulo {
-    color: #5e492d;
-    font-weight: bold;
-    font-family: "Josefin Slab", serif;
+    color: #534027;
+    font-family: "Josefin Slab" serif;
     text-align: center;
     list-style-type: none;
     margin: 10%;
@@ -446,11 +444,11 @@
 }
 
 .p_nosotros {
-  font-size: 25px;
+  font-size: 23px;
   text-align: justify;
   margin-left: 4vw;
   margin-right: 5vw;
-  font-family: "Josefin Slab", serif;
+  font-family: "Josefin Slab" serif;
 }
 
 @media only screen and (max-width: 425px) {
@@ -474,7 +472,7 @@
     text-align: justify;
     margin-left: 4vw;
     margin-right: 5vw;
-    font-family: "Josefin Slab", serif;
+    font-family: "Josefin Slab" serif;
   }
 }
 
@@ -493,8 +491,8 @@
   margin: 2vh;
 }
 
-.p_adoptar {
-  font-family: 'Josefin Slab', serif;
+.grid-adoptar div .p_adoptar {
+  font-family: "Josefin Slab" serif;
   font-size: 120%;
   text-align: center;
   color: #534027;
@@ -520,11 +518,12 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .p_adoptar {
-    font-family: 'Josefin Slab', serif;
-    font-weight: bold;
+  .grid-adoptar div .p_adoptar {
+    font-family: "Josefin Slab" serif;
     font-size: 120%;
     text-align: center;
+    color: #534027;
+    font-weight: bold;
   }
 }
 
@@ -545,7 +544,7 @@
 }
 
 .p_adoptados {
-  font-family: 'Josefin Slab', serif;
+  font-family: "Josefin Slab" serif;
   font-size: 120%;
   text-align: center;
   color: #534027;
@@ -568,7 +567,7 @@
     text-align: center;
   }
   .p_adoptados {
-    font-family: 'Josefin Slab', serif;
+    font-family: "Josefin Slab" serif;
     font-weight: bold;
     font-size: 120%;
     text-align: center;
@@ -593,6 +592,8 @@
 .p_requisitos {
   margin: 10vh 5vw;
   text-align: justify;
+  font-family: "Josefin Slab" serif;
+  font-size: 120%;
 }
 
 .contenedor-video-requisitos {
@@ -602,8 +603,13 @@
       grid-template-columns: 100%;
   -ms-grid-rows: 100%;
       grid-template-rows: 100%;
-  width: 80vw;
-  margin: 10vw;
+}
+
+.contenedor-video-requisitos .videos_requisitos {
+  width: 42vw;
+  height: 23vw;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .texto_requisitos {
@@ -616,7 +622,7 @@
   overflow: hidden;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  font-family: "Josefin Slab", serif;
+  font-family: "Josefin Slab" serif;
   color: #534027;
 }
 
@@ -683,7 +689,7 @@
     overflow: hidden;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    font-family: 'Josefin Slab', serif;
+    font-family: "Josefin Slab" serif;
     color: #534027;
   }
   .animacion-texto {

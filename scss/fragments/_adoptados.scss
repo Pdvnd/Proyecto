@@ -15,7 +15,7 @@
     font-family: $variable-font;
     font-size: 120%;
     text-align: center;
-    color: $parracolor;
+    color: map-get($map: $colores, $key: 'parracolor');
     margin: 6vh;
 }
 

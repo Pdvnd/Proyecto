@@ -13,7 +13,6 @@
     font-family: $variable-font;
     color: map-get($map: $colores, $key: 'parrabtn' );
     text-decoration: 0;
-    font-weight: bold;
 }
 .sticky {
     position: sticky;
@@ -42,8 +41,7 @@
 .nav-link {
     color: map-get($map: $colores, $key: 'titucolor' );
     font-family: $variable-font;
-    font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
     text-decoration: none;
     display: flex;
     white-space: nowrap;
@@ -51,6 +49,7 @@
     text-align: center;
     align-items: center;
     z-index: 20;
+    font-weight: 400;
 }
 .ulNavbar,
 .navbar-nav {

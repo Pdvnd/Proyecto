@@ -3,18 +3,19 @@
     grid-template-columns: auto;
     grid-template-rows: 100%;
     column-gap: 1vw;
+    margin: 2%;
     div {
         .p_index {
             font-family: $variable-font;
             font-size: 150%;
             text-align: center;
             color: map-get($map: $colores, $key: 'parracolor');
-        }
-    }
+        }     
+}
 }
 .grid-maltrato {
     display: grid;
-    grid-template-columns: 48% 52%;
+    grid-template-columns: 52% 48%;
     grid-template-rows: 100%;
     align-items: center;
     align-content: center;
@@ -23,6 +24,10 @@
             margin: 10vh 5vw;
             text-align: justify;
         }
+        .img-maltrato {
+            width: 47vw;
+            height: auto;
+        } 
     }
 }
 
@@ -73,11 +78,11 @@
                 text-align: justify;
                 margin: 2vh;
             }
+            .img-maltrato {
+                width: 90vw;
+                height: auto;
+            }
         }
-    }
-    .img-maltrato {
-        width: 90vw;
-        height: auto;
     }
     .contenedor-videos {
         display: flex;

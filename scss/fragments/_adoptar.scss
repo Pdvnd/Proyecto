@@ -8,14 +8,15 @@
             width: 95%;
             margin: 2vh;
         }
+        .p_adoptar {
+            font-family: $variable-font;
+            font-size: 120%;
+            text-align: center;
+            color: map-get($map: $colores, $key: 'parracolor' );
+        }
     }
 }
-.p_adoptar {
-    font-family: $variable-font;
-    font-size: 120%;
-    text-align: center;
-    color: $parracolor;
-}
+
 
 @media only screen and(max-width: 425px) {
     .grid-adoptar {
@@ -29,10 +30,13 @@
             display: flex;
             flex-direction: column;
         }
+        .p_adoptar {
+            font-family: $variable-font;
+            font-size: 120%;
+            text-align: center;
+            color: map-get($map: $colores, $key: 'parracolor' );
+            font-weight: bold;
+        }
     }
 }
-    .p_adoptar {
-        @extend .p_adoptar;
-        font-weight: bold;
-    }
 }

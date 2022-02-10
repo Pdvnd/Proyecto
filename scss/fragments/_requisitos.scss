@@ -9,13 +9,17 @@
     margin: 10vh 5vw;
     text-align: justify;
     font-family: $variable-font;
+    font-size: 120%;
 }
 .contenedor-video-requisitos {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 100%;
-    width: 80vw;
-    margin: 10vw;
+    .videos_requisitos {
+        width: 42vw;
+        height: 23vw;
+        align-content: center;
+    }
 }
 .texto_requisitos {
     width: 24em;

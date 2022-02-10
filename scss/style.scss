@@ -1,3 +1,12 @@
+$colores: (
+    'parracolor': #534027,
+    'titucolor': #f2eee3,
+    'btn': #caaf8d,
+    'parrabtn': black,
+    'parrafooter': #1f160a,
+    'titufooter':#20180c,
+);
+$variable-font: 'Josefin Slab' serif;
 @import "./fragments/general";
 @import "./fragments/home";
 @import "./fragments/footer";
@@ -7,13 +16,6 @@
 @import "./fragments/adoptar";
 @import "./fragments/adoptados";
 @import "./fragments/requisitos";
-$variable-font: 'Josefin Slab', serif;
-$colores: (
-    'parracolor': #534027,
-    'titucolor': #f2eee3,
-    'btn': #caaf8d,
-    'parrabtn': black,
-    'parrafooter': #1f160a,
-    'titufooter':#20180c 
-)
+@import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700 &family=Cormorant:wght@500;600&family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300&display=swap");
 
