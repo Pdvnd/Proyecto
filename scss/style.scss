@@ -6,6 +6,8 @@ $colores: (
     'parrafooter': #1f160a,
     'titufooter':#20180c,
 );
+$redColor: rgba(244,67,54,1);
+$blueColor:rgba(33,150,243,1);
 $variable-font: 'Josefin Slab' serif;
 @import "./fragments/general";
 @import "./fragments/home";

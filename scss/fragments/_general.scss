@@ -11,7 +11,7 @@
     background-color: map-get($map: $colores, $key:'btn');
     font-size: 150%;
     font-family: $variable-font;
-    color: map-get($map: $colores, $key: 'parrabtn' );
+    color: map-get($map: $colores, $key: 'parrabtn');
     text-decoration: 0;
 }
 .sticky {
@@ -39,9 +39,9 @@
 }
 .barra,
 .nav-link {
-    color: map-get($map: $colores, $key: 'titucolor' );
+    color: map-get($map: $colores, $key: 'titucolor');
     font-family: $variable-font;
-    font-size: 20px;
+    font-size: 15px;
     text-decoration: none;
     display: flex;
     white-space: nowrap;
@@ -83,6 +83,7 @@
     background-color: map-get($map: $colores, $key: 'titucolor');
     background-image: cover;
     justify-content: space-between;
+
 }
 @media only screen and(max-width: 425px) {
     .sticky {
@@ -90,7 +91,8 @@
         bottom: 0;
         position: static;
     }
-    .logo, .navbar-brand {
+    .logo,
+    .navbar-brand {
         width: 20vh;
     }
 }
