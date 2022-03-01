@@ -1,4 +1,3 @@
-
 .adoptar-contenedor {
     width: 100%;
     max-width: 1200px;
@@ -6,7 +5,7 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
-    color: map-get($map: $colores, $key:'parracolor' );
+    color: map-get($map: $colores, $key:'parracolor');
     font-family: $variable-font;
 }
 
@@ -20,7 +19,7 @@
     text-align: center;
     transition: all 0.25s;
     background-image: url('../imagenes/fondo-nalas5.png');
-    background-size:  cover;
+    background-size: cover;
     background-position: 80%;
     background-size: 45vw;
     background-repeat: no-repeat;
@@ -47,5 +46,23 @@
 }
 .lista {
     text-decoration: none;
-    color: map-get($map: $colores, $key:'parracolor' );
+    color: map-get($map: $colores, $key:'parracolor');
+}
+@media only screen and (max-width: 880px) {
+    .adoptar-contenedor .card-adoptar {
+        background-image: url('../imagenes/fondo-nalas5.png');
+        background-size: cover;
+        background-position: 80%;
+        background-size: 75vw;
+        background-repeat: no-repeat;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .adoptar-contenedor .card-adoptar {
+        background-image: url('../imagenes/fondo-nalas5.png');
+        background-size: cover;
+        background-position: 80%;
+        background-size: 165%;
+        background-repeat: no-repeat;
+    }
 }

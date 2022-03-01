@@ -6,8 +6,8 @@
     align-content: center;
     margin: 1vh 2vw;
     background-image: url('../imagenes/fondo-nalas5.png');
-    background-size:  center;
-    background-position: 0,5%;
+    background-size: center;
+    background-position: 0, 5%;
     background-size: 51vw;
     background-repeat: no-repeat;
     div {
@@ -24,12 +24,23 @@
     margin-right: 5vw;
     font-family: $variable-font;
 }
+@media only screen and(max-width: 880px) {
+    .grid_nosotros {
+        background-image: url('../imagenes/fondo-nalas5.png');
+        background-position: left;
+        background-size: 60%;
+        background-repeat: no-repeat;}
+    }
 @media only screen and(max-width: 425px) {
     .grid_nosotros {
         display: flex;
         flex-direction: column;
         width: 95%;
         height: 50%;
+        background-image: url('../imagenes/fondo-nalas5.png');
+        background-position: top;
+        background-size: 120%;
+        background-repeat: no-repeat;
         div {
             .img-nosotos {
                 width: 325px;

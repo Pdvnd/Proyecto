@@ -84,39 +84,6 @@
     background-image: cover;
     justify-content: space-between;
 }
-
-@media only screen and (max-width: 425px) {
-    .sticky {
-        top: 0;
-        bottom: 0;
-        position: static;
-    }
-    .logo,
-    .navbar-brand {
-        width: 24vh;
-        text-align: end;
-    }
-    .img {
-        width: 60%;
-        margin-left: 30vw;
-    }
-    .contenedor,
-    .navbar-expand-sm {
-        align-items: center;
-        background-color: map-get($map: $colores, $key: 'titucolor');
-        background-image: cover;
-        justify-content: space-around;
-    }
-    .logo,
-    .navbar-expand-sm {
-        text-align: left;
-        display: flex;
-        margin-left: auto;
-        align-items: center;
-        justify-content: space-around;
-    }
-}
-
 @media only screen and(max-width: 880px) {
     @mixin btnindex {
         align-items: center;
@@ -129,8 +96,7 @@
         text-decoration: 0;
     }
     .img {
-        margin-left: 20%;
-        width: 25vw;
+        width: 20vw;
     }
     .sticky {
         position: sticky;
@@ -159,7 +125,7 @@
     .nav-link {
         color: map-get($map: $colores, $key: 'titucolor');
         font-family: $variable-font;
-        font-size: 18px;
+        font-size: 13px;
         text-decoration: none;
         display: flex;
         white-space: nowrap;
@@ -203,3 +169,37 @@
         justify-content: space-between;
     }
 }
+
+
+@media only screen and (max-width: 425px) {
+    .sticky {
+        top: 0;
+        bottom: 0;
+        position: static;
+    }
+    .logo,
+    .navbar-brand {
+        width: 24vh;
+        text-align: end;
+    }
+    .img {
+        width: 60%;
+        margin-left: 30vw;
+    }
+    .contenedor,
+    .navbar-expand-sm {
+        align-items: center;
+        background-color: map-get($map: $colores, $key: 'titucolor');
+        background-image: cover;
+        justify-content: space-around;
+    }
+    .logo,
+    .navbar-expand-sm {
+        text-align: left;
+        display: flex;
+        margin-left: auto;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+

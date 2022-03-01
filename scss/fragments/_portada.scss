@@ -14,24 +14,6 @@
     background-repeat: no-repeat;
 }
 
-@media only screen and (max-width: 425px) {
-    .portada {
-        height: 30vh;
-        width: 100%;
-        background-image: url('../imagenes/Portada.jpg');
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .adopta-portada {
-        height: 20vh;
-        width: 100%;
-        background-image: url('../imagenes/adopta.jpg');
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-}
 @media only screen and (max-width: 880px) { 
     .portada {
         height: 40vh;
@@ -42,11 +24,31 @@
         background-repeat: no-repeat;
     }
     .adopta-portada {
-        height: 40vh;
+        height: 35vh;
         width: auto;
         background-image: url('../imagenes/adopta.jpg');
         background-size: cover;
         background-repeat: no-repeat;
     }
 }
+
+@media only screen and (max-width: 425px) {
+    .portada {
+        height: 30vh;
+        width: 100%;
+        background-image: url('../imagenes/Portada.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .adopta-portada {
+        height: 30vh;
+        width: 100%;
+        background-image: url('../imagenes/adopta.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
 

@@ -128,50 +128,9 @@
           justify-content: space-between;
 }
 
-@media only screen and (max-width: 425px) {
-  .sticky {
-    top: 0;
-    bottom: 0;
-    position: static;
-  }
-  .logo,
-  .navbar-brand {
-    width: 24vh;
-    text-align: end;
-  }
-  .img {
-    width: 60%;
-    margin-left: 30vw;
-  }
-  .contenedor,
-  .navbar-expand-sm {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: #f2eee3;
-    background-image: cover;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .logo,
-  .navbar-expand-sm {
-    text-align: left;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-left: auto;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-}
-
 @media only screen and (max-width: 880px) {
   .img {
-    margin-left: 20%;
-    width: 25vw;
+    width: 20vw;
   }
   .sticky {
     position: -webkit-sticky;
@@ -217,7 +176,7 @@
   .nav-link {
     color: #f2eee3;
     font-family: "Hubballi", cursive;
-    font-size: 18px;
+    font-size: 13px;
     text-decoration: none;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -285,6 +244,46 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .sticky {
+    top: 0;
+    bottom: 0;
+    position: static;
+  }
+  .logo,
+  .navbar-brand {
+    width: 24vh;
+    text-align: end;
+  }
+  .img {
+    width: 60%;
+    margin-left: 30vw;
+  }
+  .contenedor,
+  .navbar-expand-sm {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #f2eee3;
+    background-image: cover;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .logo,
+  .navbar-expand-sm {
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -359,6 +358,23 @@
           box-shadow: 0 2px 2px rgba(0, 0, 0, 0.7);
 }
 
+@media only screen and (max-width: 880px) {
+  .grid-maltrato {
+    background-image: url("../imagenes/fondo-nalas5.png");
+    background-size: cover;
+    background-position: 9%;
+    background-size: 90vw;
+    background-repeat: no-repeat;
+  }
+  .contenedor-videos {
+    background-image: url("../imagenes/fondo-nalas5.png");
+    background-size: cover;
+    background-position: right;
+    background-size: 50vw;
+    background-repeat: repeat;
+  }
+}
+
 @media only screen and (max-width: 425px) {
   .grid-index {
     display: -webkit-box;
@@ -378,7 +394,7 @@
     width: 100%;
   }
   .card {
-    width: 95%;
+    width: 96%;
   }
   .p_index {
     font-family: "Hubballi", cursive;
@@ -396,14 +412,18 @@
             flex-direction: column;
     width: 100%;
     height: auto;
+    background-image: url("../imagenes/fondo-nalas5.png");
+    background-position: top;
+    background-size: 150%;
+    background-repeat: no-repeat;
   }
   .grid-maltrato div .p-maltrato {
     font-size: 15px;
     text-align: justify;
-    margin: 2vh;
+    margin: 0,5vh;
   }
   .grid-maltrato div .img-maltrato {
-    width: 90vw;
+    width: 85vw;
     height: auto;
   }
   .contenedor-videos {
@@ -419,13 +439,13 @@
             align-items: center;
   }
   .contenedor-videos div .videos-maltrato {
-    width: 87vw;
+    width: 80vw;
     height: 60vw;
     background-image: url("../imagenes/fondo-nalas5.png");
     background-size: cover;
-    background-position: cover;
+    background-position: top;
     background-size: 125%;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
   }
 }
 
@@ -440,7 +460,7 @@
   width: 100%;
   text-align: left;
   font: bold 16px "Hubballi", cursive;
-  padding: 55px 50px;
+  padding: 55px 52px;
   z-index: 100;
 }
 
@@ -668,28 +688,6 @@
   color: white;
 }
 
-@media only screen and (max-width: 425px) {
-  .footer-distributed {
-    font: bold 14px sans-serif;
-  }
-  .titufooter {
-    font: bold 25px sans-serif;
-  }
-  .footer-distributed .footer-left,
-  .footer-distributed .footer-center,
-  .footer-distributed .footer-right {
-    display: block;
-    width: 70%;
-    text-align: auto;
-  }
-  .footer-distributed .footer-center i {
-    margin-left: 0;
-  }
-  .button {
-    margin-left: 25%;
-  }
-}
-
 @media (max-width: 880px) {
   .footer-distributed {
     font: bold 14px sans-serif;
@@ -707,6 +705,28 @@
   }
   .button {
     margin-left: 37%;
+  }
+}
+
+@media (max-width: 425px) {
+  .footer-distributed {
+    font: bold 14px sans-serif;
+  }
+  .titufooter {
+    font: bold 25px sans-serif;
+  }
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    text-align: auto;
+  }
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+  .button {
+    margin-left: 23%;
   }
 }
 
@@ -730,6 +750,26 @@
   font-weight: bold;
 }
 
+@media only screen and (max-width: 880px) {
+  .titulo-principal {
+    font-family: "Hubballi", cursive;
+    color: #534027;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    margin: 4vw;
+    text-shadow: 0 1px 0, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+  }
+  .subtitulo {
+    color: #534027;
+    font-family: "Hubballi", cursive;
+    text-align: center;
+    list-style-type: none;
+    margin: 5%;
+    font-size: 190%;
+  }
+}
+
 @media only screen and (max-width: 425px) {
   .titulo-principal {
     font-family: "Hubballi", cursive;
@@ -746,26 +786,6 @@
     text-align: center;
     list-style-type: none;
     margin: 10%;
-    font-size: 190%;
-  }
-}
-
-@media only screen and (max-width: 880px) {
-  .titulo-principal {
-    font-family: "Hubballi", cursive;
-    color: #534027;
-    text-align: center;
-    font-size: 48px;
-    font-weight: bold;
-    margin: 4vw;
-    text-shadow: 0 1px 0, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
-  }
-  .subtitulo {
-    color: #534027;
-    font-family: "Hubballi", cursive;
-    text-align: center;
-    list-style-type: none;
-    margin: 8%;
     font-size: 190%;
   }
 }
@@ -787,25 +807,6 @@
   background-repeat: no-repeat;
 }
 
-@media only screen and (max-width: 425px) {
-  .portada {
-    height: 30vh;
-    width: 100%;
-    background-image: url("../imagenes/Portada.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  .adopta-portada {
-    height: 20vh;
-    width: 100%;
-    background-image: url("../imagenes/adopta.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-}
-
 @media only screen and (max-width: 880px) {
   .portada {
     height: 40vh;
@@ -816,9 +817,28 @@
     background-repeat: no-repeat;
   }
   .adopta-portada {
-    height: 40vh;
+    height: 35vh;
     width: auto;
     background-image: url("../imagenes/adopta.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .portada {
+    height: 30vh;
+    width: 100%;
+    background-image: url("../imagenes/Portada.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .adopta-portada {
+    height: 30vh;
+    width: 100%;
+    background-image: url("../imagenes/adopta.jpg");
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -839,7 +859,7 @@
   margin: 1vh 2vw;
   background-image: url("../imagenes/fondo-nalas5.png");
   background-size: center;
-  background-position: 0,5%;
+  background-position: 0, 5%;
   background-size: 51vw;
   background-repeat: no-repeat;
 }
@@ -857,6 +877,15 @@
   font-family: "Hubballi", cursive;
 }
 
+@media only screen and (max-width: 880px) {
+  .grid_nosotros {
+    background-image: url("../imagenes/fondo-nalas5.png");
+    background-position: left;
+    background-size: 60%;
+    background-repeat: no-repeat;
+  }
+}
+
 @media only screen and (max-width: 425px) {
   .grid_nosotros {
     display: -webkit-box;
@@ -868,6 +897,10 @@
             flex-direction: column;
     width: 95%;
     height: 50%;
+    background-image: url("../imagenes/fondo-nalas5.png");
+    background-position: top;
+    background-size: 120%;
+    background-repeat: no-repeat;
   }
   .grid_nosotros div .img-nosotos {
     width: 325px;
@@ -948,6 +981,26 @@
   color: #534027;
 }
 
+@media only screen and (max-width: 880px) {
+  .adoptar-contenedor .card-adoptar {
+    background-image: url("../imagenes/fondo-nalas5.png");
+    background-size: cover;
+    background-position: 80%;
+    background-size: 75vw;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .adoptar-contenedor .card-adoptar {
+    background-image: url("../imagenes/fondo-nalas5.png");
+    background-size: cover;
+    background-position: 80%;
+    background-size: 165%;
+    background-repeat: no-repeat;
+  }
+}
+
 .adoptados-contenedor {
   width: 100%;
   max-width: 1200px;
@@ -1007,6 +1060,26 @@
 .adoptados-contenedor a {
   font-weight: 500;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 880px) {
+  .adoptados-contenedor .card-adoptados {
+    background-image: url("../imagenes/fondo-nalas5.png");
+    background-size: cover;
+    background-position: 80%;
+    background-size: 75vw;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .adoptados-contenedor .card-adoptados {
+    background-image: url("../imagenes/fondo-nalas5.png");
+    background-size: cover;
+    background-position: 80%;
+    background-size: 165%;
+    background-repeat: no-repeat;
+  }
 }
 
 .grid_requisitos {
@@ -1098,6 +1171,16 @@
   }
 }
 
+@media only screen and (max-width: 880px) {
+  .grid_requisitos {
+    background-image: url("../imagenes/fondo-nalas5.png");
+    background-size: cover;
+    background-position: 1%;
+    background-size: 75vw;
+    background-repeat: no-repeat;
+  }
+}
+
 @media only screen and (max-width: 425px) {
   .grid_requisitos {
     display: -webkit-box;
@@ -1107,13 +1190,12 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 95%;
+    width: 100%;
     height: 50%;
     text-align: justify;
-    background-image: url("../imagenes/fondo-nalas3.png");
-    background-size: cover;
-    background-position: 100%;
-    background-size: 60vw;
+    background-image: url("../imagenes/fondo-nalas5.png");
+    background-position: top;
+    background-size: 145%;
     background-repeat: no-repeat;
   }
   .p_requisitos {
@@ -1130,8 +1212,8 @@
         grid-template-rows: 100%;
   }
   .contenedor-video-requisitos .video_requisitos {
-    width: 90vw;
-    height: 50vw;
+    width: 95%;
+    height: 55vw;
     -ms-flex-line-pack: center;
         align-content: center;
     margin-left: 3%;
@@ -1175,18 +1257,6 @@
       width: 24em;
       border-right-color: transparent;
     }
-  }
-}
-
-@media only screen and (max-width: 880px) {
-  .contenedor-video-requisitos {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
-    -ms-grid-rows: 100%;
-        grid-template-rows: 100%;
-    background-image: url("/imagenes/fond-1.png");
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -55,8 +55,24 @@
         }
     }
 }
+@media only screen and(max-width: 880px) {
+    .grid-maltrato {
+        background-image: url('../imagenes/fondo-nalas5.png');
+        background-size: cover;
+        background-position: 9%;
+        background-size: 90vw;
+        background-repeat: no-repeat;
+    }
+    .contenedor-videos {
+        background-image: url('../imagenes/fondo-nalas5.png');
+        background-size: cover;
+        background-position: right;
+        background-size: 50vw;
+        background-repeat: repeat;
+    }
+}
 
-@media only screen and (max-width: 425px) {
+@media only screen and(max-width: 425px) {
     .grid-index {
         display: flex;
         flex-direction: column;
@@ -72,7 +88,7 @@
         }
     }
     .card {
-        width: 95%;
+        width: 96%;
     }
     .p_index {
         font-family: $variable-font;
@@ -85,14 +101,18 @@
         flex-direction: column;
         width: 100%;
         height: auto;
+        background-image: url('../imagenes/fondo-nalas5.png');
+        background-position: top;
+        background-size: 150%;
+        background-repeat: no-repeat;
         div {
             .p-maltrato {
                 font-size: 15px;
                 text-align: justify;
-                margin: 2vh;
+                margin: 0,5vh;
             }
             .img-maltrato {
-                width: 90vw;
+                width: 85vw;
                 height: auto;
             }
         }
@@ -103,13 +123,13 @@
         align-items: center;
         div {
             .videos-maltrato {
-                width: 87vw;
+                width: 80vw;
                 height: 60vw;
                 background-image: url('../imagenes/fondo-nalas5.png');
                 background-size: cover;
-                background-position: cover;
+                background-position: top;
                 background-size: 125%;
-                background-repeat: repeat;
+                background-repeat: no-repeat;
             }
         }
     }
