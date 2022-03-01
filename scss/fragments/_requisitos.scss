@@ -4,26 +4,33 @@
     grid-template-rows: 100%;
     align-items: center;
     align-content: center;
+    background-image: url('../imagenes/fondo-nalas5.png');
+    background-size:  cover;
+    background-position: 1%;
+    background-size: 55vw;
+    background-repeat: no-repeat;
 }
 .p_requisitos {
     margin: 10vh 5vw;
     text-align: justify;
     font-family: $variable-font;
-    font-size: 120%;
+    font-size: 126%;
+    list-style-image: url('../imagenes/paticas-perrito.jpg');
 }
 .contenedor-video-requisitos {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 100%;
-    .videos_requisitos {
+    .video_requisitos {
         width: 42vw;
         height: 23vw;
         align-content: center;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.60em);
     }
 }
 .texto_requisitos {
     width: 24em;
-    margin: 0 auto;
+    margin: 5% auto;
     border-right: 2px solid rgba(255, 255, 255, 0.75);
     font-size: 30px;
     text-align: center;
@@ -34,8 +41,8 @@
     color: map-get($map: $colores, $key:'parracolor' );
 }
 .animacion-texto {
-    animation: textoo 10s;
-    animation-iteration-count: infinite;
+    animation: textoo 3s;
+    animation-iteration-count:infinite;
     font-weight: bold;
 }
 
@@ -50,26 +57,38 @@
     }
 }
 
-@media only screen and(max-width: 425px) {
+@media only screen and (max-width: 425px) {
 .grid_requisitos {
     display: flex;
     flex-direction: column;
     width: 95%;
     height: 50%;
     text-align: justify;
+    background-image: url('../imagenes/fondo-nalas3.png');
+    background-size:  cover;
+    background-position: 100%;
+    background-size: 60vw;
+    background-repeat: no-repeat;
 }
 .p_requisitos {
     font-size: 15px;
     text-align: justify;
-    margin: 3vh;
+    margin-left: 7%
 }
-.videos_requisitos {
-    width: 50vw 80vw;
-    align-content: center;
+.contenedor-video-requisitos {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    .video_requisitos {
+        width: 90vw;
+        height: 50vw;
+        align-content: center;
+        margin-left: 3%;
+    }
 }
 .texto_requisitos {
     width: 24em;
-    margin: 0 auto;
+    margin: 12% auto;
     border-right: 2px solid rgba(255, 255, 255, 0.75);
     font-size: 18px;
     text-align: center;
@@ -94,4 +113,12 @@
         border-right-color: transparent;
     }
 }
+}
+@media only screen and (max-width: 880px) {
+    .contenedor-video-requisitos {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        background-image: url('/imagenes/fond-1.png');
+    }
 }

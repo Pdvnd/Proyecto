@@ -13,7 +13,8 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-@media only screen and(max-width: 425px) {
+
+@media only screen and (max-width: 425px) {
     .portada {
         height: 30vh;
         width: 100%;
@@ -23,7 +24,7 @@
         background-repeat: no-repeat;
     }
     .adopta-portada {
-        height: 25vh;
+        height: 20vh;
         width: 100%;
         background-image: url('../imagenes/adopta.jpg');
         background-position: center;
@@ -31,3 +32,21 @@
         background-repeat: no-repeat;
     }
 }
+@media only screen and (max-width: 880px) { 
+    .portada {
+        height: 40vh;
+        width: auto;
+        background-image: url('../imagenes/Portada.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .adopta-portada {
+        height: 40vh;
+        width: auto;
+        background-image: url('../imagenes/adopta.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+

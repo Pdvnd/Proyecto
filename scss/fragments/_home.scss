@@ -10,8 +10,8 @@
             font-size: 150%;
             text-align: center;
             color: map-get($map: $colores, $key: 'parracolor');
-        }     
-}
+        }
+    }
 }
 .grid-maltrato {
     display: grid;
@@ -19,6 +19,11 @@
     grid-template-rows: 100%;
     align-items: center;
     align-content: center;
+    background-image: url('../imagenes/fondo-nalas5.png');
+    background-size: cover;
+    background-position: 1%;
+    background-size: 50vw;
+    background-repeat: no-repeat;
     div {
         .p_maltrato {
             margin: 10vh 5vw;
@@ -27,7 +32,7 @@
         .img-maltrato {
             width: 47vw;
             height: auto;
-        } 
+        }
     }
 }
 
@@ -35,17 +40,23 @@
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 100%;
+    background-image: url('../imagenes/fondo-nalas5.png');
+    background-size: cover;
+    background-position: right;
+    background-size: 50vw;
+    background-repeat: repeat;
     div {
         .videos-maltrato {
             width: 40vw;
             height: 25vw;
             margin-left: 5vw;
             margin-right: 3vw;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.70s);
         }
     }
 }
 
-@media only screen and(max-width: 425px) {
+@media only screen and (max-width: 425px) {
     .grid-index {
         display: flex;
         flex-direction: column;
@@ -56,10 +67,12 @@
         div {
             .img_index {
                 height: auto;
-                width: 90%;
-                margin: 2vh 5vw;
+                width: 100%;
             }
         }
+    }
+    .card {
+        width: 95%;
     }
     .p_index {
         font-family: $variable-font;
@@ -90,8 +103,13 @@
         align-items: center;
         div {
             .videos-maltrato {
-                width: 90vw;
-                height: 50vh;
+                width: 87vw;
+                height: 60vw;
+                background-image: url('../imagenes/fondo-nalas5.png');
+                background-size: cover;
+                background-position: cover;
+                background-size: 125%;
+                background-repeat: repeat;
             }
         }
     }
